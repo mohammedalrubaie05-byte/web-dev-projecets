@@ -1,0 +1,135 @@
+:root {
+  --primary: #ff5aa5;
+  --primary-dark: #e03b88;
+  --bg: #fff0f8;
+  --surface: #ffffff;
+  --text: #4a2c3a;
+  --text-muted: #8c5a71;
+  --border: #ffb6d9;
+  --radius: 16px;
+  --font-main: "Comic Sans MS", "Varela Round", system-ui, sans-serif;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  background-size: 20px 20px;
+}
+
+h1, h2, h3 { 
+  margin-top: 0; 
+  color: #d12e75; 
+}
+
+p { 
+  margin: 0 0 1rem; 
+  color: var(--text-muted); 
+}
+
+a { 
+  color: var(--primary); 
+  text-decoration: none; 
+  font-weight: bold;
+}
+
+a:hover { 
+  text-decoration: underline; 
+  color: var(--primary-dark);
+}
+
+img { 
+  display: flex;
+  max-width: 50%; 
+  border-radius: 100px ;
+  border: 4px solid var(--border);
+  margin: 16px;
+
+}
+
+header, main {
+  padding: 2rem 5%;
+}
+
+header {
+  background: var(--surface);
+  border-bottom: var(--primary-dark) solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+section { 
+  padding: 3rem 0; 
+  border-bottom: 2px dashed var(--border); 
+}
+
+article {
+  background: var(--surface);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 15px rgba(255, 90, 165, 0.15);
+  border: 2px solid var(--border);
+}
+
+form {
+  background: var(--surface);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 15px rgba(255, 90, 165, 0.15);
+  border: var(--primary) solid;
+ 
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-family: inherit;
+  background: #fffcfd;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(255, 90, 165, 0.2);
+}
+
+button, input[type="submit"] {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: var(--primary-dark);
+}

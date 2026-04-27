@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <title>Pet Care & Adoption</title>
+  
+<link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+<header>
+  <h1>Pet Care & Adoption</h1>
+</header>
+
+<main>
+  <h2>Animals list</h2>
+
+  <ul>
+    <li>
+      <article>
+        <h3>Mimi (Cat)</h3>
+        <p>Calm and friendly. Loves naps, soft blankets, and gentle play.</p>
+        <p>
+          <img src="imgs/catimage1.jpeg" alt="">
+          <button type="button">Adopt</button>
+          <button type="button" href="">Contact the owner</button>
+        </p>
+      </article>
+    </li>
+
+    <li>
+      <article>
+        <h3>Bruno (Dog)</h3>
+        <p>Playful and smart. Great for families and daily walks.</p>
+        <p>
+          <img src="imgs/dogimage.jpeg" alt="">
+          <button type="button">Adopt</button>
+          <button type="button">Contact the owner</button>
+        </p>
+      </article>
+    </li>
+
+    <li>
+      <article>
+        <h3>Luna (Rabbit)</h3>
+        <p>Quiet and cute. Enjoys carrots and a clean, safe space.</p>
+        <p>
+          <img src="imgs/rabbitimage.jpeg" alt="">
+          <button type="button">Adopt</button>
+          <button type="button">Contact the owner</button>
+        </p>
+      </article>
+    </li>
+  </ul>
+
+  <h2>what do you want exactly?</h2>
+
+
+  <form action="#" method="post" aria-label="Hello Kitty">
+    <fieldset>
+      <p>Adoption request</p>
+
+      <p>
+        <label>
+          Your name
+          <input name="name" required>
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Phone number
+          <input name="phone" inputmode="tel" required>
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Choose an animal
+          <select name="pet" required>
+            <option value="">Select</option>
+            <option>Mimi (Cat)</option>
+            <option>Bruno (Dog)</option>
+            <option>Luna (Rabbit)</option>
+          </select>
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Why do you want to adopt?
+          <textarea name="message" rows="4"></textarea>
+        </label>
+      </p>
+
+      <p>
+        <button type="submit">Send</button>
+        <button type="reset">Clear</button>
+      </p>
+    </fieldset>
+  </form>
+</main>
+<script  src="script.js"></script>
+
+</body>
+</html>
